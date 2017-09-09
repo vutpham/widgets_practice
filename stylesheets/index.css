@@ -1,0 +1,30 @@
+.root-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1.clock-name {
+  text-transform: uppercase;
+  color: #152139;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+#clock-widget {
+  /*background-color: #dbdcdc;*/
+  background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/8HMTTNp/ticking-time-animation-of-clocks-with-hands-turning-and-cogs-winding-looping-animation-on-white-background_emgnsrmvl__S0000.jpg);
+  width: 200px;
+  border-radius: 5px;
+  font-family: 'Exo 2', sans-serif;
+  padding: 10px;
+  border: 3px #6791b9 solid;
+}
+
+#clock-time {
+  display: flex;
+  justify-content: center;
+  color: #152139;
+  font-size: 40px;
+}
