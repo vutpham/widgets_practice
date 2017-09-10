@@ -48,6 +48,7 @@ h1.weather-name {
   /*background-color: #dbdcdc;*/
   background-image: url(https://static1.squarespace.com/static/51f2e70ce4b02c290dc93af1/t/537c0310e4b071e473985a56/1400636178090/81-explore-the-area-climate-and-weather.jpg?format=1500w);
   width: 200px;
+  height: 80px;
   border-radius: 5px;
   padding: 10px;
   border: 3px #797fad solid;
@@ -119,3 +120,27 @@ h1.weather-name {
 input[type=text] {
   outline: none;
 }
+
+/* Autocomplete CSS transition */
+
+.auto-enter {
+   opacity: 0.01;
+   transform: translateY(150%);
+ }
+
+ .auto-enter.auto-enter-active {
+   opacity: 1;
+   transform: translateY(0);
+   transition: opacity 500ms, transform 500ms;
+ }
+
+ .auto-leave {
+   opacity: 1;
+   transform: translateY(0);
+ }
+
+ .auto-leave.auto-leave-active {
+   opacity: 0.01;
+   transform: translateY(100%);
+   transition: opacity 500ms, transform 500ms;
+ }

@@ -6,18 +6,19 @@ import Weather from './weather';
 import AutoComplete from './autocomplete';
 
 let NAMES = [
-  'Carly',
-  'Peter',
-  'Anthony',
-  'Anna',
-  'Teddy',
-  'Esther',
-  'David',
-  'Mandy',
-  'Michael',
-  'Stewart',
-  'Sam',
-  'Vincent'
+  'Mario',
+  'Luigi',
+  'Peach',
+  'Bowser',
+  'Toad',
+  'Kirby',
+  'Jigglypuff',
+  'Yoshi',
+  'Pikachu',
+  'Ness',
+  'Lucas',
+  'Zelda',
+  'Link'
 ];
 
 class Root extends React.Component {
