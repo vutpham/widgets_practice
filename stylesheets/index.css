@@ -24,6 +24,7 @@ h1.clock-name {
   border-radius: 5px;
   padding: 10px;
   border: 3px #6791b9 solid;
+  margin: 10px;
 }
 
 #clock-time {
@@ -50,7 +51,7 @@ h1.weather-name {
   border-radius: 5px;
   padding: 10px;
   border: 3px #797fad solid;
-  margin: 20px;
+  margin: 10px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -67,4 +68,54 @@ h1.weather-name {
 
 #city-name {
   color: #001319;
+}
+
+#load {
+  padding: 10px;
+}
+
+/* Autocomplete Widget */
+
+.autocomplete-name {
+  text-transform: uppercase;
+  color: #FEE759;
+  font-size: 8px;
+  padding: 0;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+.autocomplete-widget {
+  background-color: #E84A61;
+  background-image: url(https://images6.alphacoders.com/317/thumb-1920-317170.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 180px;
+  height: 300px;
+  border-radius: 5px;
+  padding: 20px;
+  border: 3px #F8A5B9 solid;
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#results {
+  color: black;
+  opacity: 1;
+  list-style: none;
+  padding: inherit;
+}
+
+#results li {
+  width: 40%;
+}
+
+#results li:hover {
+  color: #F8A5B9;
+  cursor: pointer;
+}
+
+input[type=text] {
+  outline: none;
 }

@@ -32,11 +32,18 @@ class Weather extends Component {
   }
 
   render() {
+    let temp;
+    if (!this.state.temp) {
+      temp = <div id="load">Loading...</div>;
+    } else {
+      temp = <div id="temp">{this.state.temp}°F</div>;
+    }
+
     return(
       <div id="weather-widget">
         <h1 className="weather-name">Weather widget</h1>
         <div id="weather-info">
-          <div id="temp">{this.state.temp}°F</div>
+          {temp}
           <div id="city-name">{this.state.city}</div>
         </div>
       </div>
