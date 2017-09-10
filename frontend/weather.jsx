@@ -15,7 +15,8 @@ class Weather extends Component {
       let lon = position.coords.longitude;
       let lat = position.coords.latitude;
       let APPID = `&APPID=c9d002923ca54918d0f7bb419fa9c202`;
-      console.log(lon, lat);
+
+      // Creating a request using plain Javascript
       let request = new XMLHttpRequest();
       request.open('GET',
        `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}${APPID}&units=imperial`,
