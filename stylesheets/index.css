@@ -2,9 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Exo 2', sans-serif;
 }
 
+/* Clock widget styles */
+
 h1.clock-name {
+  display: flex;
+  justify-content: flex-end;
   text-transform: uppercase;
   color: #152139;
   font-size: 12px;
@@ -17,7 +22,6 @@ h1.clock-name {
   background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/8HMTTNp/ticking-time-animation-of-clocks-with-hands-turning-and-cogs-winding-looping-animation-on-white-background_emgnsrmvl__S0000.jpg);
   width: 200px;
   border-radius: 5px;
-  font-family: 'Exo 2', sans-serif;
   padding: 10px;
   border: 3px #6791b9 solid;
 }
@@ -27,4 +31,40 @@ h1.clock-name {
   justify-content: center;
   color: #152139;
   font-size: 40px;
+}
+
+/* Weather widget styles */
+
+h1.weather-name {
+  text-transform: uppercase;
+  color: #BA0031;
+  font-size: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+#weather-widget {
+  /*background-color: #dbdcdc;*/
+  background-image: url(https://static1.squarespace.com/static/51f2e70ce4b02c290dc93af1/t/537c0310e4b071e473985a56/1400636178090/81-explore-the-area-climate-and-weather.jpg?format=1500w);
+  width: 200px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 3px #797fad solid;
+  margin: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#temp {
+  color: #797fad;
+  font-size: 40px;
+}
+
+#city-name {
+  color: #001319;
 }
