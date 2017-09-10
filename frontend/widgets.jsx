@@ -4,8 +4,9 @@ import ReactDOM from 'react-dom';
 import Clock from './clock';
 import Weather from './weather';
 import AutoComplete from './autocomplete';
+import Tabs from './tabs';
 
-let NAMES = [
+const NAMES = [
   'Mario',
   'Luigi',
   'Peach',
@@ -21,6 +22,12 @@ let NAMES = [
   'Link'
 ];
 
+const TABS = [
+  {title: "1", content: "One"},
+  {title: "2", content: "Two!"},
+  {title: "3", content: "Three"}
+];
+
 class Root extends React.Component {
   render() {
     return(
@@ -29,6 +36,7 @@ class Root extends React.Component {
         <Clock />
         <Weather />
         <AutoComplete names={ NAMES }/>
+        <Tabs content={ TABS }/>
       </div>
     );
   }
